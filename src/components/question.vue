@@ -45,23 +45,28 @@ const doAnswer = () => {
   flex-direction: column;
   gap: 20px;
   height: 100%;
-  .question__problem{
-    h2{
+
+  .question__problem {
+    h2 {
       font-size: 24px;
       font-weight: bold;
     }
   }
+
   .question__answers {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     .question__answer-block {
       display: flex;
       gap: 20px;
       cursor: pointer;
+
       .question__answer-btn-default {
         display: none;
       }
+
       .question__answer-btn-custom {
         width: 20px;
         height: 20px;
@@ -69,21 +74,18 @@ const doAnswer = () => {
         border-radius: 50%;
         transition: background-color 0.3s, 0.3s;
       }
+
       .question__answer-text {
         word-wrap: break-word;
         flex: 1;
         font-size: 16px;
       }
     }
+
     .question__answer-block:hover .question__answer-btn-custom {
       background-color: #3300FF;
       border-color: #3300FF;
     }
   }
 }
-
-
-
-
-
 </style>
